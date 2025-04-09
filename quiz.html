@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Website Project</title>
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="icon" href="favicon.ico" type="image/x-icon" />
+        <script type="text/javascript" src="script.js" defer></script>
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#">Quiz</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <h1>Cat Facts Quiz</h1>
+                <p>How much do you know about cats?</p>
+            </section>
+            <div class="q">
+                <p>What is the average lifespan of a domestic cat?</p>
+                <input type="radio" name="q1" value="0"> 0-6 years<br>
+                <input type="radio" name="q1" value="1"> 7-13 years<br>
+                <input type="radio" name="q1" value="2" id="a1"> 13-20 years<br>
+                <input type="radio" name="q1" value="3"> 20-26 years
+            </div><br>
+            <div class="q">
+                <p>Which cat breed is known for its lack of fur?</p>
+                <input type="radio" name="q2" value="0"> Siamese<br>
+                <input type="radio" name="q2" value="1"> Maine Coon<br>
+                <input type="radio" name="q2" value="2"> Persian<br>
+                <input type="radio" name="q2" value="3" id="a2"> Sphynx
+            </div><br>
+            <div class="q">
+                <p>How many bones do cats have?</p>
+                <input type="radio" name="q3" value="0"> 210<br>
+                <input type="radio" name="q3" value="1" id="a3"> 230<br>
+                <input type="radio" name="q3" value="2"> 250<br>
+                <input type="radio" name="q3" value="3"> 270
+            </div> <br>
+            <div class="q">
+                <p>What is a group of cats called?</p>
+                <input type="radio" name="q4" value="0" id="a4"> Clowder<br>
+                <input type="radio" name="q4" value="1"> Herd<br>
+                <input type="radio" name="q4" value="2"> Flock<br>
+                <input type="radio" name="q4" value="3"> Pack
+            </div><br>
+            <div class="q">
+                <p>How high/far can cats jump?</p>
+                <input type="radio" name="q5" value="0"> up to 2 times their length<br>
+                <input type="radio" name="q5" value="1"> up to 4 times their length<br>
+                <input type="radio" name="q5" value="2" id="a5"> up to 6 times their length<br>
+                <input type="radio" name="q5" value="3"> up to 8 times their length
+            </div><br>
+            <button id="quizbtn" type="button" onclick="checkAnswers()">Submit Answers</button>
+            <p id="quizpara">Your score is...</p>
+        </main>
+        <footer>
+            <p>&copy; Cats Incorporated 2025</p>
+        </footer>
+    </body>
+</html>
